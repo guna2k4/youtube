@@ -1,0 +1,94 @@
+body {
+  background-image: url("");
+  font-family: 'Open Sans', sans-serif;
+  background-color: #c18006;
+}
+
+.logo {
+  text-align: center;
+  font-size: 22px;
+  color: black;
+}
+
+.regform {
+  width: 450px;
+  background-color: white;
+  margin: 20px auto;
+  color: black;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+#heading {
+  margin-top: 0;
+  color: black;
+  text-align: center;
+  font-size: 28px;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  border: .5px solid #63707E;
+  border-radius: 6px;
+  padding: 14px 15px;
+  box-sizing: border-box;
+  margin: 5px 0px 15px;
+  color: black;
+}
+
+input:focus {
+  background-color: white;
+}
+
+button {
+  background-color: orange; /* Changed color to orange */
+  font-size: 20px;
+  color: white;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: .5px solid black;
+  width: 100%;
+}
+
+button:hover {
+  color: #eeeeee;
+}
+
+.regform .signin-up {
+  font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .regform {
+      width: 300px;
+      background-color: white;
+      margin: 40px auto;
+      color: black;
+      padding: 20px 20px 20px 20px;
+      font-size: 15px;
+  }
+
+  .logo {
+      text-align: center;
+      font-size: 18px;
+      color: black;
+  }
+
+  #heading {
+      margin-top: 0;
+      color: black;
+      text-align: center;
+      font-size: 22px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+
+  input {
+      font-size: 16px;
+  }
+}

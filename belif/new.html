@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video and Transcript</title>
+    <style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-image: url('1.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+    background-size: cover; /* Adjust the background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+
+        #top-bar {
+            background-color: #333; /* Background color for the top bar */
+            color: rgb(14, 2, 2);
+            padding: 10px;
+            text-align: center;
+            overflow: hidden; /* Clear the float */
+        }
+
+        #top-bar a {
+            color: rgb(231, 219, 219);
+            text-decoration: none;
+            margin: 0 10px;
+            float: right; /* Float the links to the right */
+        }
+
+        #youtube-workspace {
+            padding: 20px;
+        }
+        #link-input-container {
+    background-color: #a71d1d;
+    padding: 200px;
+    height: 8px;
+    width: 200px; /* Set your desired width */
+    border: 4px solid #cccccc;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+
+        #link-input {
+            width: 500%;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        #load-button {
+            padding: 8px;
+            border: 1px solid #4CAF50;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #neural-network-box {
+            width: 800px;
+            height: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            overflow: auto; /* Enable scrolling if content exceeds the box height */
+        }
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        #transcript-url {
+            margin-bottom: 20px;
+        }
+
+        #video-container {
+            margin-bottom: 20px;
+        }
+
+        #link-input {
+            width: 170%;
+            padding: 10px;
+        }
+        a {
+    display: block; /* Make the link a block element to take full width */
+    padding: 10px; /* Add some padding for better visibility */
+    text-align: center; /* Center the text */
+    margin: 10px; /* Add margin for spacing between links */
+    text-decoration: none; /* Remove the default underline */
+    color: white; /* Set text color to white */
+}
+
+a:first-child {
+    background-color: rgb(0, 60, 255); /* Set background color for the first link to red */
+}
+
+a:last-child {
+    background-color: rgb(255, 123, 0); /* Set background color for the second link to blue */
+}
+
+        #load-button {
+            padding: 8px;
+            border: 1px solid #4CAF50;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #video-link {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .bar {
+            display: inline-block;
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+
+        #red-bar {
+            background-color: #ff0000;
+            color: white;
+        }
+
+        #blue-bar {
+            background-color: #0000ff;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-bar">
+        <p>YOUTUBE WORKSPACE</p>
+        <style>
+            p {
+                color: red;
+                font-size: 24px; /* Set your desired font size */
+            }
+        </style>
+        
+        <a href="Chatassist.html">Chatassist</a>
+        <a href="n/new2.html">chatting room</a>
+    </div>
+
+    <div id="youtube-workspace">
+ 
+     <div id="link-input-container">
+        <label for="link-input">Paste YouTube Video Link:</label>
+        <br>
+        <input type="text" id="link-input" placeholder="Enter YouTube video link...">
+        <br>
+        <button id="load-button" onclick="loadVideo()">Load Video</button>
+    </div>
+
+
+    <div id="transcript-url">
+        <p>
+            Transcript URL: <a id="video-link" href="#" target="_blank">N/A</a>
+        </p>
+    </div>
+
+    <h1>Understanding Neural Networks</h1>
+    <div id="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rEDzUT3ymw4" frameborder="0" allowfullscreen></iframe>
+        <div id="neural-network-box">
+
+            <h1>Transcript</h1><p>
+                A neural network can be visualized as a black box, much like the brain of a self-driving car. It takes inputs from various sensors and transforms them into outputs that control the car's actions. The essential building blocks of a neural network are the "neurons," and these neurons are organized into layers.
+            </p>
+            <p>
+                Each layer of neurons interacts with the next layer through "weighted connections," which are essentially links with attached real-valued numbers. The neuron takes the value of a connected neuron, multiplies it by the weight of the connection, adds up these values along with the neuron's bias, and passes the result through an "activation function." This function mathematically transforms the value before it's forwarded to the next neuron. This process continues until the output layer is reached.
+            </p>
+            <p>
+                In essence, the neural network is a complex system that propagates inputs through its layers, producing desired outputs. The crux of neural networks lies in finding the optimal weights for these connections. This is achieved through various techniques, including machine learning.
+            </p>
+            <p>
+                While this overview provides a glimpse into the workings of neural networks, the details of weight optimization and machine learning techniques are topics for further exploration.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function redirectTo(page) {
+            window.location.href = page + '.html'; // Replace with actual page names
+        }
+
+        // You can add JavaScript functionality here if needed
+    </script>
+</body>
+</html>
